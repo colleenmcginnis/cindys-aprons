@@ -167,8 +167,8 @@ p {
     padding: 0;
     position: fixed;
     transition: background-image .5s ease-in-out;
-/*    -webkit-animation: changeImage 24s linear infinite;
-          animation: changeImage 24s linear infinite;*/
+    -webkit-animation: changeImage 24s linear infinite;
+          animation: changeImage 24s linear infinite;
 }
 
 @-webkit-keyframes changeImage {
@@ -661,7 +661,7 @@ footer {
 @media only screen and (max-width: 450px) {
 
     .header {
-        height: 400px;
+        height: 380px;
     }
 
     .title img {
