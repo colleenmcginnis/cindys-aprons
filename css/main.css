@@ -114,13 +114,8 @@ html {
 }
 
 .page {
-    -webkit-transform: translate(0px, 0px);
-        -ms-transform: translate(0px, 0px);
-            transform: translate(0px, 0px);
     -webkit-transition: -webkit-transform .3s linear;
             transition: transform .3s linear;
-    width:100%;
-    overflow: hidden;
 }
 
 h1 {
@@ -201,7 +196,7 @@ p {
 .title {
     width: 100%;
     text-align: center;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .5);
     color: #fff;
     position: fixed;
     top: 0px;
@@ -405,14 +400,8 @@ img {
     opacity: .9;
 }
 
-.two-col div {
-    width: 48%;
-    margin: 1rem 1% 1rem 0;
-    position: relative;
-    float: left;
-}
-
-#map {
+#mapid {
+    width: 100%;
     height: 400px;
     background-color: gray;
 }
@@ -435,10 +424,40 @@ img {
 }
 
 .contact {
-    background-color: lightslategray;
-    height: 600px;
-    margin: 0;
-    padding: 0 10%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.formInputs input {
+    width: 40%;
+    margin: 1rem 30% 0 30%;
+    height: 2rem;
+    padding-left: .5rem;
+    font-weight: 300;
+}
+
+textarea {
+    width: 40%;
+    margin: 1rem 30% 0 30%;
+    height: 4rem;
+    padding-left: .5rem;
+    font-weight: 300;
+ }
+
+ #submitButton {
+    width: 41.5%;
+    margin: 1rem 30% 0 30%;
+    height: 2.5rem;
+    background-color: rgba(62, 81, 107, .85);
+    color: #fff;
+    border: none;
+    transition: background-color .2s linear;
+}
+
+#submitButton:hover {
+    background-color: rgba(62, 81, 107, 1);
 }
 
 footer {
@@ -532,6 +551,28 @@ footer {
 @media only screen and (min-width: 1200px) {
     .container {
         margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    
+    .imgWrap {
+        width: 100%;
+    }
+
+    .imgDescription h3 {
+        font-size: 2rem;
+        top: 7.5rem;
+    }
+
+    .imgDescription p {
+        font-size: 1.5rem;
+        top: 6.5rem;
+    }
+
+    .formInputs input, textarea, #submitButton {
+        width: 60%;
+        margin: 1rem 20% 0 20%;
     }
 }
 
@@ -632,7 +673,7 @@ footer {
         top: 500px;
     }
 
-    .imgWrap, #map, .two-col p {
+    #map, .two-col p {
         width: 100%;
     }
 
@@ -643,10 +684,12 @@ footer {
     }
 
     .imgDescription h3 {
+        font-size: 1.25rem;
         top: 6.5rem;
     }
 
     .imgDescription p {
+        font-size: .75rem;
         top: 6rem;
     }
 
@@ -687,6 +730,16 @@ footer {
     .etsyImg button {
         width: 90%;
         margin: 3rem 5%;
+    }
+
+    .formInputs input, textarea {
+        width: 96%;
+        margin: 1rem 0 0 0;
+    }
+
+    #submitButton {
+        width: 100%;
+        margin: 1rem 0 0 0;
     }
 }
 

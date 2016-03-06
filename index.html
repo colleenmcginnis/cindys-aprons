@@ -9,6 +9,8 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+        <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -44,10 +46,9 @@
 
             <div class="container">
                 <div class="intro-text">
-                    <img src="img/animated-turn-small-white.gif" alt="sample aprons">
+                    <img class="apronTwirl" src="img/static-turn-small-white.png" alt="sample aprons">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p> 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p> 
+                    elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia! Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p> 
                 </div>
                 <div class="section" id="products">
                     <div class="section-header">
@@ -93,31 +94,34 @@
                         <div class="etsyImg">
                             <button><h3>Visit the Etsy Store</h3></button>
                         </div>
-                        <div class="two-col">
-                            <div id="map">
-                            </div>
-                            <div>
-                                <p>Visit us</p>
-                                <ul>
-                                    <li>One</li>
-                                    <li>two</li>
-                                    <li>three</li>
-                                    <li>four</li>
-                                </ul>
-                            </div>                       
-                        </div>
                     </div>
                 </div>
-                <div class="section" id="contact">
+                <div class="section" id="shop">
+                    <div class="section-header custom">
+                        <hr>
+                        <h2>Upcoming events</h2>
+                        <hr>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p>
+                    <div id="mapid">
+                    </div>
+                </div>
+                <div class="section contact" id="contact">
                     <div class="section-header materials">
                         <hr>
                         <h2>Custom Orders</h2>
                         <hr>
                     </div>
-                    <div class="section-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p> 
-                        
+                    <form action="//formspree.io/colleen.j.mcginnis@gmail.com" method="POST">
+                    <div class="formInputs">
+                        <input type="text" name="name" id="yourName" placeholder="Name">
+                        <input type="email" name="email" id="yourEmail" placeholder="Email address">
+                        <input type="text" name="subject" id="emailSubject" placeholder="Subject">
                     </div>
+                    <textarea name="emailMessage" type="text" id="emailMessage" placeholder="Message"></textarea>
+                    <br>
+                    <input type="submit" name="submitButton" id="submitButton">
+                        </form>
                 </div>
             </div>
         </div>
