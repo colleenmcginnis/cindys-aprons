@@ -113,6 +113,16 @@ html {
     background-color: #fff;
 }
 
+.page {
+    -webkit-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    -webkit-transition: -webkit-transform .3s linear;
+            transition: transform .3s linear;
+    width:100%;
+    overflow: hidden;
+}
+
 h1 {
     font-family: 'Archistico';
     text-transform: uppercase;
@@ -266,6 +276,11 @@ nav a:hover {
     width: 43%;
     top: 2px;
     display: none;
+}
+
+.menu li:first-child {
+    height: 0;
+    width: 0;
 }
 
 .hamburger {
@@ -522,12 +537,99 @@ footer {
 
 @media only screen and (max-width: 667px) {
 
+    i {
+        font-size: 1.5rem;
+    }
+
+    .hamburger {
+        display: inline;
+        float: left;
+        margin: .5rem 1rem;
+        color: #fff;
+        z-index:200;
+        clear: both;
+    }
+
+    .exit {
+        color: #fff;
+        position: relative;
+        margin: 0;
+        top: -1.5rem;
+    }
+
+    .menu {
+        height: 100vh;
+        overflow: hidden;
+        display: block;
+        width: 200px;
+        background-color: rgba(80, 80, 80, 1);
+        -webkit-transform: translate(-295px, -10px);
+            -ms-transform: translate(-295px, -10px);
+                transform: translate(-295px, -10px);
+        -webkit-transition: -webkit-transform .3s linear;
+                transition: transform .3s linear;
+        z-index: 100;
+        margin: 0;
+        padding: 2rem 0 0 1rem;
+
+    }
+
+    .menu li {
+        width: 100%;
+        display: block;
+        text-align: center;
+        -webkit-transition: background-color .2s linear;
+                transition: background-color .2s linear;
+        padding: 2px 8px;
+        font-size: 1rem;
+        text-align: left;
+        margin: 0;
+    }
+
+    nav ul {
+        width: 100%;
+        margin: 0;
+    }
+
+    #logo {
+        display: none;
+    }
+
+   .menu li:first-child {
+        height: 50px;
+        padding-top: 10px;
+    }
+
+    .openMenu {
+        -webkit-transform: translate(-75px, -10px);
+            -ms-transform: translate(-75px, -10px);
+                transform: translate(-75px, -10px);
+        -webkit-transition: -webkit-transform .3s linear;
+                transition: transform .3s linear;
+    }
+
+    .shiftRight {
+        -webkit-transform: translate(215px, 0);
+            -ms-transform: translate(215px, 0);
+                transform: translate(215px, 0);
+        -webkit-transition: -webkit-transform .3s linear;
+                transition: transform .3s linear;
+    }
+
+    .scrolled {
+        height: 50px;
+    }
+
     .header {
         height: 450px;
     }
 
     .title img {
         top: 180px;
+    }
+
+    .container {
+        top: 500px;
     }
 
     .imgWrap, #map, .two-col p {
@@ -559,11 +661,15 @@ footer {
 @media only screen and (max-width: 450px) {
 
     .header {
-        height: 300px;
+        height: 400px;
     }
 
     .title img {
-        top: 120px;
+        top: 150px;
+    }
+
+    .container {
+        top: 450px;
     }
 
     .imgDescription h3 {

@@ -38,37 +38,3 @@ $('.hamburger').on('click', function(){
 	$('.menu').toggleClass('openMenu');
 	$('.page').toggleClass('shiftRight');
 });
-
-//Carousel
-
-var images=['img/kitchen.jpg', 'img/apron-and-stove.jpg', 'img/mirror.jpg', 'img/vitage.jpg'];
-var countDots=['#count-one', '#count-two', '#count-three', '#count-four']
-var currentPosition = 0;
-
-$('#next').on('click', nextImage);
-$('#prev').on('click', previousImage);
-
-function nextImage(){
-	currentPosition++;
-
-	$('#prev').css('display', 'inline');
-
-	changeImage();
-
- 	if (currentPosition === 3) {
-		$('#next').css('display', 'none');
-	}
-}
-
-function previousImage(){
-
-	currentPosition--;
-
-	$('#next').css('display', 'inline');
-
-	changeImage();
-
-	if (currentPosition === 0 ) {
-		$('#prev').css('display', 'none');
-	}
-}

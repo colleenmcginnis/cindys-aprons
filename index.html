@@ -9,7 +9,7 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'> 
@@ -21,102 +21,107 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="header">
-            <div class="title">
-                <img style="width:60%;margin:auto" src="img/title.svg" alt="apron strings">
+        <nav>
+            <i class="fa fa-bars hamburger"></i>
+            <div class="menu">
+                <ul>
+                    <li><i class="fa fa-close hamburger exit"></i></li>
+                    <li><a href="#" id="home">Home</a><img src="img/title.svg" alt="random door logo" id="title"></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="page">
+            
+            <div class="header">
+                <div class="title">
+                    <img style="width:60%;margin:auto" src="img/title.svg" alt="apron strings">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="intro-text">
+                    <img src="img/animated-turn-small-white.gif" alt="sample aprons">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p> 
+                </div>
+                <div class="section" id="products">
+                    <div class="section-header">
+                        <hr>
+                        <h2>Products</h2>
+                        <hr>
+                    </div>
+                    <div class="section-content">
+                        <p>I Give Thee My Apron includes a collection of vintage aprons, custom aprons, and vintage linens and pillows.</p> 
+                        <div class="three-col">
+                            <div class="imgWrap">
+                                <img src="img/mirror.jpg" alt="mirror apron">
+                                <div class="imgDescription">
+                                    <h3>Vintage</h3>
+                                    <p>Vintage Finds & Original Designs</p>
+                                </div>
+                            </div>
+                            <div class="imgWrap">
+                                <img src="http://placehold.it/1200x940" alt="carousel">
+                                <div class="imgDescription">
+                                    <h3>Custom</h3>
+                                    <p>Aprons Made-to-Order</p>
+                                </div>
+                            </div>
+                            <div class="imgWrap">
+                                <img src="http://placehold.it/1200x940" alt="carousel">
+                                <div class="imgDescription">
+                                    <h3>Other</h3>
+                                    <p>Linens & Other Materials</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="shop">
+                    <div class="section-header custom">
+                        <hr>
+                        <h2>How to Shop</h2>
+                        <hr>
+                    </div>
+                    <div class="section-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p> 
+                        <div class="etsyImg">
+                            <button><h3>Visit the Etsy Store</h3></button>
+                        </div>
+                        <div class="two-col">
+                            <div id="map">
+                            </div>
+                            <div>
+                                <p>Visit us</p>
+                                <ul>
+                                    <li>One</li>
+                                    <li>two</li>
+                                    <li>three</li>
+                                    <li>four</li>
+                                </ul>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="contact">
+                    <div class="section-header materials">
+                        <hr>
+                        <h2>Custom Orders</h2>
+                        <hr>
+                    </div>
+                    <div class="section-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p> 
+                        
+                    </div>
+                </div>
             </div>
         </div>
 
-        <nav>
-            <ul>
-                <li><a href="#" id="home">Home</a><img src="img/title.svg" alt="random door logo" id="title"></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <div class="container">
-            <div class="intro-text">
-                <img src="img/animated-turn-small-white.gif" alt="sample aprons">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
-                elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p> 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p> 
-            </div>
-            <div class="section" id="products">
-                <div class="section-header">
-                    <hr>
-                    <h2>Products</h2>
-                    <hr>
-                </div>
-                <div class="section-content">
-                    <p>I Give Thee My Apron includes a collection of vintage aprons, custom aprons, and vintage linens and pillows.</p> 
-                    <div class="three-col">
-                        <div class="imgWrap">
-                            <img src="img/mirror.jpg" alt="mirror apron">
-                            <div class="imgDescription">
-                                <h3>Vintage</h3>
-                                <p>Vintage Finds & Original Designs</p>
-                            </div>
-                        </div>
-                        <div class="imgWrap">
-                            <img src="http://placehold.it/1200x940" alt="carousel">
-                            <div class="imgDescription">
-                                <h3>Custom</h3>
-                                <p>Aprons Made-to-Order</p>
-                            </div>
-                        </div>
-                        <div class="imgWrap">
-                            <img src="http://placehold.it/1200x940" alt="carousel">
-                            <div class="imgDescription">
-                                <h3>Other</h3>
-                                <p>Linens & Other Materials</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section" id="shop">
-                <div class="section-header custom">
-                    <hr>
-                    <h2>How to Shop</h2>
-                    <hr>
-                </div>
-                <div class="section-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p> 
-                    <div class="etsyImg">
-                        <button><h3>Visit the Etsy Store</h3></button>
-                    </div>
-                    <div class="two-col">
-                        <div id="map">
-                        </div>
-                        <div>
-                            <p>Visit us</p>
-                            <ul>
-                                <li>One</li>
-                                <li>two</li>
-                                <li>three</li>
-                                <li>four</li>
-                            </ul>
-                        </div>                       
-                    </div>
-                </div>
-            </div>
-            <div class="section" id="contact">
-                <div class="section-header materials">
-                    <hr>
-                    <h2>Custom Orders</h2>
-                    <hr>
-                </div>
-                <div class="section-content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolorem ipsam nihil a assumenda, non suscipit voluptatem inventore vitae impedit, eum numquam doloribus qui corporis quidem repellendus, labore ex mollitia!</p> 
-                    
-                </div>
-            </div>
-        </div>
-        <div class="contact">
-                
-        </div>
         <footer>
             &copy; 2016 
         </footer>
