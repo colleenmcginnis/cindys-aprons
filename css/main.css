@@ -112,7 +112,7 @@ html {
     top: 100vh;
     background-color: #fff;
     max-width: 1200px;
-    margin-bottom: 100px;
+    margin: 0 0 100px 0;
 }
 
 .page {
@@ -270,7 +270,7 @@ nav a:hover {
     display: inline;
     float: left;
     position: relative;
-    width: 43%;
+    width: 60%;
     top: 2px;
     display: none;
 }
@@ -569,6 +569,11 @@ footer {
 
 @media only screen and (max-width: 1000px) {
     
+    #title {
+        width: 70%;
+        text-align: left;
+    }
+
     .imgDescription h3 {
         font-size: 1.25rem;
         top: 4rem;
@@ -582,6 +587,11 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
+
+    #title {
+        width: 80%;
+        text-align: left;
+    }
 
     .intro-text img, .intro-text p {
         font-size: 1rem;
@@ -751,11 +761,11 @@ footer {
     }
 
     .imgDescription h3 {
-        top: 4rem;
+        top: 5.5rem;
     }
 
     .imgDescription p {
-        top: 3.5rem;
+        top: 5rem;
     }
 
     .etsyImg {

@@ -36,6 +36,8 @@ $(window).on('scroll', function(){
 });
 
 $('.hamburger').on('click', function(){
+	$('#title').hide();
+	$('#home').show();
 	$('.menu').toggleClass('openMenu');
 	$('.page').toggleClass('shiftRight');
 });
