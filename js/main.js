@@ -25,7 +25,6 @@ $(window).on('scroll', function(){
 		$('nav').addClass('scrolled');
 		$('#home').hide();
 		$('#title').show();
-		$('.apronTwirl').html('src', 'img/animated-turn-small-white.gif');
 		$('.menu').removeClass('openMenu');
 		$('.page').removeClass('shiftRight');
 
@@ -42,6 +41,37 @@ $('.hamburger').on('click', function(){
 });
 
 
+$(window).scroll(function () {
+	$('.apronTwirl').each(function () {
+	    var imagePos = $(this).offset().top;
+	    var imageHeight = $(this).height();
+	    var topOfWindow = $(window).scrollTop();
+
+	    if (imagePos < topOfWindow + imageHeight && imagePos + imageHeight > topOfWindow) {
+	        $(this).attr('src', 'img/animated-turn-small-white.gif');
+	    } else {
+	        $(this).attr('src', 'img/static-turn-small-white.png');
+	    }
+	});
+});
+
+
+// var images = ['../img/apron-and-stove.jpg', '../img/restaurant-table-apron.jpg', '../img/holiday.jpg', '../img/mirror-apron.jpg']
+// var currentPosition = 0;
+
+// $(window).on('load', function(){
+// 	$(this).delay(700*index).nextImage();
+// });
+
+// function nextImage(){
+// 	currentPosition++;
+// 	changeImage();
+// }
+
+// function changeImage(){
+// 	$('#carousel').attr('src', images[currentPosition]);
+// }
+
 // //Switch to gif
 // $(window).on('scroll', function(){
 // 	if ($(this).scrollTop() >= navPosition) {
@@ -53,7 +83,7 @@ $('.hamburger').on('click', function(){
 
 //Map
 
-var mymap = L.map('mapid').setView([42.359, -87.256], 7);
+var mymap = L.map('map').setView([42.359, -87.256], 7);
 var fairOne = L.marker([41.918628, -87.714843]).addTo(mymap);
 var fairTwo = L.marker([42.956422, -85.682373]).addTo(mymap);
 
@@ -65,6 +95,6 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
     accessToken: 'pk.eyJ1IjoiY21jZyIsImEiOiJlZTA1Mjg5MThhNzAwYjIwMzkzOTRhZmI0YzdhM2ZhNyJ9.qmfiogrh1Wu7_JlfoaSMKw'
 }).addTo(mymap);
 
-fairOne.bindPopup("<b>Name of Chicago Fair</b><br>Address or other info.").openPopup();
-fairTwo.bindPopup("<b>Name of Michigan Fair</b><br>Address or other info.").openPopup();
+fairOne.bindPopup("<div class='popUp'><strong><a href='#'>Name of Chicago Fair</a></strong><br>Day, Mon XX Xa - Xp<br>Location, Chicago, IL</div>").openPopup();
+fairTwo.bindPopup("<div class='popUp'><strong><a href='http://grandvalleyartists.com/reedslake' target='blank'>Reed's Lake Art Festival</a></strong><br>Sat, Jun 18 9a - 5p<br>Gaslight Village, Grand Rapids, MI</div>").openPopup();
 

@@ -111,6 +111,8 @@ html {
     position: relative;
     top: 100vh;
     background-color: #fff;
+    max-width: 1200px;
+    margin-bottom: 100px;
 }
 
 .page {
@@ -227,7 +229,7 @@ nav ul {
 }
 
 nav li {
-    width: 24%;
+    width: 19%;
     display: inline-block;
     margin-top: 3px;
     height: 45px;
@@ -303,6 +305,7 @@ hr {
     width: 46%;
     padding: 4% 2%;
     margin: 0;
+    font-size: 1.25rem;
 }
 
 img {
@@ -313,7 +316,7 @@ img {
 }
 
 .section {
-    width: 100%;
+    width: 98%;
     clear: both;
     padding: 2%;
     margin-bottom: 2rem;
@@ -362,14 +365,14 @@ img {
 .imgDescription h3 {
     font-size: 1.25rem;
     position: relative;
-    top: 3rem;
+    top: 6rem;
 }
 
 .imgDescription p {
     font-size: .75rem;
     color: #fff;
     position: relative;
-    top: 2.5rem;
+    top: 5.5rem;
 }
 
 .imgWrap:hover .imgDescription {
@@ -400,10 +403,18 @@ img {
     opacity: .9;
 }
 
-#mapid {
+#map {
     width: 100%;
     height: 400px;
     background-color: gray;
+}
+
+#map a {
+    text-decoration: none;
+}
+
+.popUp {
+    text-align: center;
 }
 
 .vintage-preview {
@@ -461,8 +472,10 @@ textarea {
 }
 
 footer {
-    background-color: lightslategray;
+    clear: both;
+    background-color: none;
     margin: 0;
+    height: 400px;
 }
 
 
@@ -554,20 +567,34 @@ footer {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     
-    .imgWrap {
-        width: 100%;
-    }
-
     .imgDescription h3 {
-        font-size: 2rem;
-        top: 7.5rem;
+        font-size: 1.25rem;
+        top: 4rem;
     }
 
     .imgDescription p {
-        font-size: 1.5rem;
-        top: 6.5rem;
+        font-size: .75rem;
+        top: 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+    .intro-text img, .intro-text p {
+        font-size: 1rem;
+    }
+
+    .imgDescription h3 {
+        font-size: 1.25rem;
+        top: 3.5rem;
+    }
+
+    .imgDescription p {
+        font-size: .75rem;
+        top: 2.5rem;
     }
 
     .formInputs input, textarea, #submitButton {
@@ -629,7 +656,6 @@ footer {
 
     nav ul {
         width: 100%;
-        margin: 0;
     }
 
     #logo {
@@ -673,7 +699,16 @@ footer {
         top: 500px;
     }
 
+    .intro-text img, .intro-text p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
     #map, .two-col p {
+        width: 100%;
+    }
+
+    .imgWrap {
         width: 100%;
     }
 
