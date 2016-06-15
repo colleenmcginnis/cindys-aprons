@@ -151,6 +151,7 @@ p {
     font-size: 1rem;
     color: darkslategray;
     font-weight: 300;
+    text-align: center;
 }
 
 .header {
@@ -252,6 +253,7 @@ nav a {
 nav a:hover {
     color: rgba(255, 255, 255, 1);
     font-weight: 700;
+    cursor: pointer;
 }
 
 .scrolled {
@@ -303,9 +305,13 @@ hr {
     display: block;
     float: left;
     width: 46%;
-    padding: 4% 2%;
+    padding: 40px 2%;
     margin: 0;
     font-size: 1.25rem;
+}
+
+.intro-text p {
+    padding-top: 100px;
 }
 
 img {
